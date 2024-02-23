@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .project {
+            margin-bottom: 30px;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+        }
+        .whatsapp-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Miguel Code</h1>
+    </header>
+    
+    <nav>
+        <a href="#portfolio">Portafolio</a>
+        <a href="#about">Sobre Mí</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <main>
+        <section id="portfolio">
+            <h2>Portafolio</h2>
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto 1.</p>
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <a href="#">Ver Proyecto</a>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto 2.</p>
+                <img src="proyecto2.jpg" alt="Proyecto 2">
+                <a href="#">Ver Proyecto</a>
+            </div>
+            <!-- Agrega más proyectos según sea necesario -->
+        </section>
+        
+        <section id="about">
+            <h2>Sobre Mí</h2>
+            <p>Texto sobre ti y tu experiencia como desarrollador web.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Ponte en contacto conmigo a través del siguiente formulario:</p>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <a class="whatsapp-chat" href="https://wa.me/tunumerodetelefono" target="_blank"><img src="whatsapp-icon.png" alt="Chat de WhatsApp"></a>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Miguel Code</p>
+    </footer>
+</body>
+</html>
